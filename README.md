@@ -8,23 +8,18 @@ If your files are renamed but references are not replaced, you need to correct y
 
 ## Configuration
 ### Recipe specific
+#### config.rev.replaceInExtensions
+> default: `['.js', '.css', '.html', '.json']`
 
-### Paths
-#### paths.pipeminTmp
-> alias: paths.tmp<br>
-> default: 'tmp/'
-
-Path to index task output directory.
-
+Configure revReplace to modify files only with given extensions
 
 ### Order
-#### config.rev
+#### config.order.rev
 > default: 1000
 
-#### config.revReplace
-> alias: config.rev
+#### config.order.revReplace
+> alias: config.order.rev
 > default: 1000 (from alias)
-
 
 ## Api
 ### Used Hooks
