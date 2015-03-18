@@ -3,6 +3,7 @@
 module.exports = function ($, config) {
     var _ = $.lodash;
 
+    config.sources = undefined;
     config.rev = _.defaults(config.rev || {}, {
         replaceInExtensions: ['.js', '.css', '.html', '.json']
     });
@@ -16,5 +17,5 @@ module.exports = function ($, config) {
         order: {
             revReplace: config.order.rev
         }
-    },config);
+    }, config);
 };
